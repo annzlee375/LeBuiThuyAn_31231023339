@@ -19,7 +19,7 @@ namespace LeBuiThuyAn_31231023339
             //Question_07();
             //Question_08();
             //Question_09();
-            Question_10();
+            //Question_10();
 
             Console.WriteLine("Press any key to stop");
             Console.ReadKey();
