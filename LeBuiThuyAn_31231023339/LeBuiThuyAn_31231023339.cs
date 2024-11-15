@@ -4,25 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeBuiThuyAn_31231023339
+namespace ConsoleApp1
 {
     internal class LeBuiThuyAn_31231023339
     {
         public static void Main()
         {
-            Random random = new Random();
-            Console.Write("Nhap so dong n cua ma tran: "); int n = int.Parse(Console.ReadLine());
+            Random rand = new Random();
+            Console.Write("Nhap so dong n (1-100): ");
+            int n = int.Parse(Console.ReadLine());
             int[][] jaggedArray = new int[n][];
+
             for (int i = 0; i < n; i++)
             {
-                Console.Write($"Nhap so cot cho dong {i + 1}: ");
-                int k = int.Parse(Console.ReadLine());
-                jaggedArray[i] = new int[k];
-
-                Console.WriteLine($"Nhap {k} phan tu ngau nhien cho dong {{i + 1}}: ");
-                for (int j = 0; j < k; j++)
+                Console.Write($"Nhap so cot cho dong {i + 1} (1-100): ");
+                int ki = int.Parse(Console.ReadLine());
+                jaggedArray[i] = new int[ki];
+                Console.WriteLine($"Nhap cac phan tu ngau nhien cho dong {i + 1} ");
+                for (int j = 0; j < ki; j++)
                 {
-                    jaggedArray[i][j] = int.Parse(Console.ReadLine());
+                    jaggedArray[i][j] = rand.Next(1, 101);
                 }
             }
             displayMenu(jaggedArray);
