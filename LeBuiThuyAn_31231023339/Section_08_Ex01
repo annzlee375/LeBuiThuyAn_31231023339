@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LeBuiThuyAn_31231023339
 {
-    internal class Section08
+    internal class Section_08_Ex01
     {
         static void Main(string[] args)
         {
